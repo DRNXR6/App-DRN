@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DRN.css">
+    <title> App DRN </title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1> App DRN </h1>
+    </header>
+
+    <section id="Principal">
+        <h2> Esta es una aplicacion para ver los precios <br> de impresión/fotocopias o para realizar <br> calculos especificos. </h2>
+        <br><hr><br>
+
+        <h2> Acciones disponibles: </h2>
+        <input id="BtnPrecios" onclick="precios()" type="button" value="Ver precios"><br>
+        <input id="BtnCalculo" onclick="calculo()" type="button" value="Hacer calculo">
+    </section>
+
+    <section id="Precios" style="display: none;">
+        <br>
+        <h2> Precios: </h2>
+        <br>
+        <details >
+            <Summary> Impresiones </Summary>
+            
+            <table>
+                <tr>
+                    <th> Material </th>
+                    <th> A color </th>
+                    <th> Blanco y Negro </th>
+                </tr>
+
+                <tr>
+                    <td> Cédula </td>
+                    <td> ₡300 </td>
+                    <td> ₡250 </td>
+                </tr>
+
+                <tr>
+                    <td> Página </td>
+                    <td> ₡200 </td>
+                    <td> ₡150 </td>
+                </tr>
+
+                <tr>
+                    <td> Patrones </td>
+                    <td> ₡100 </td>
+                    <td> ₡75 </td>
+                </tr>
+
+                <tr>
+                    <td> Más de 20 páginas </td>
+                    <td> ₡150 </td>
+                    <td> ₡125 </td>
+                </tr>
+
+                <tr>
+                    <td> Imagen grande por página </td>
+                    <td> ₡400 </td>
+                    <td> ₡350 </td>
+                </tr>
+
+                <tr>
+                    <td> 4 imagenes por página </td>
+                    <td> ₡500 </td>
+                    <td> ₡400 </td>
+                </tr>
+                <tr>
+                    <td> 6 imagenes por página </td>
+                    <td> ₡700 </td>
+                    <td> ₡600 </td>
+                </tr>
+                <tr>
+                    <td> 9 imagenes por página </td>
+                    <td> ₡1000 </td>
+                    <td> ₡900 </td>
+                </tr>
+                <tr>
+                    <td> Currículum </td>
+                    <td> ₡1000 </td>
+                    <td> ₡700 </td>
+                </tr>
+
+            </table>
+        </details>
+        <br>
+        <details >
+            <Summary> Fotocopias </Summary>
+            
+            <table>
+                <tr>
+                    <th> Material </th>
+                    <th> A color </th>
+                    <th> Blanco y Negro </th>
+                </tr>
+
+                <tr>
+                    <td> Cédula </td>
+                    <td> ₡150 </td>
+                    <td> ₡100 </td>
+                </tr>
+
+                <tr>
+                    <td> Página </td>
+                    <td> ₡150 </td>
+                    <td> ₡100 </td>
+                </tr>
+
+                <tr>
+                    <td> Patrones </td>
+                    <td> ₡100 </td>
+                    <td> ₡75 </td>
+                </tr>
+
+                <tr>
+                    <td> Más de 20 páginas </td>
+                    <td> ₡100 </td>
+                    <td> ₡75 </td>
+                </tr>
+
+                <tr>
+                    <td> Imagen grande por página </td>
+                    <td> ₡350 </td>
+                    <td> ₡300 </td>
+                </tr>
+
+                <tr>
+                    <td> 4 imagenes por página </td>
+                    <td> ₡400 </td>
+                    <td> ₡350 </td>
+                </tr>
+                <tr>
+                    <td> 6 imagenes por página </td>
+                    <td> ₡600 </td>
+                    <td> ₡550 </td>
+                </tr>
+                <tr>
+                    <td> 9 imagenes por página </td>
+                    <td> ₡900 </td>
+                    <td> ₡950 </td>
+                </tr>
+            </table>
+            
+        </details>
+        <br><br><br>
+        <input id="Inicio" type="button" value="Volver al inicio" onclick="Inicio()"><br><br>
+    </section>
+    
+    <section id="Calculo">
+
+        <div id="hacer" style="display: none">
+            <br><br><br>
+            <h2> ¿Que vas hacer?  </h2>
+            <br><br>
+            <div id="botones">
+                <input id="Imprimir" onclick="Imprimir()" type="button" value="Imprimir"><br>
+                <input id="Fotocopiar" onclick="Fotocopiar()" type="button" value="Fotocopiar"><br>
+            </div>
+
+        </div>
+
+        <div id="Impresion" style="display: none">
+            <h2> ¿Que vas a imprimir?  </h2>
+            <select id="AImprimir">
+                <option value="Cedula"> Cédula </option>
+                <option value="Pagina"> Página </option>
+                <option value="Patrones"> Patrones </option>
+                <option value=">20"> Más de 20 páginas</option>
+                <option value="Img_grande"> Img grande por página </option>
+                <option value="4Img"> 4 imagenes por página </option>
+                <option value="6Img"> 6 imagenes por página </option>
+                <option value="9Img"> 9 imagenes por página </option>
+                <option value="Curriculum"> Currículum </option>
+            </select><br><br><br>
+
+            <input id="Siguiente" onclick="Siguiente()" type="button" value="Siguiente"><br>
+            <br><br>
+        </div>
+
+        <div id="Fotocopia" style="display: none">
+            <h2> ¿Que vas a fotocopiar?  </h2>
+            <select id="AFotocopiar">
+                <option value="Cedula"> Cédula </option>
+                <option value="Pagina"> Página </option>
+                <option value="Patrones"> Patrones </option>
+                <option value=">20"> Más de 20 páginas</option>
+                <option value="Img_grande"> Img grande por página </option>
+                <option value="4Img"> 4 imagenes por página </option>
+                <option value="6Img"> 6 imagenes por página </option>
+                <option value="9Img"> 9 imagenes por página </option>
+            </select><br><br>
+
+            <input id="Siguiente" onclick="Siguiente()" type="button" value="Siguiente"><br>
+
+        </div>
+
+        <div id="TipoColor" style="display: none">
+            <br><br><br>
+
+            <h2> ¿A color?  </h2><br>
+            <div id="botones2">
+                <input id="Si" onclick="Si()" type="button" value="Si"><br>
+                <input id="No" onclick="No()" type="button" value="No"><br>
+            </div>
+        </div>
+
+        <div id="Cantidad" style="display: none">
+            <br><br>
+            <h2> ¿Cuantás?  </h2><br>
+            <input id="Cant" type="number" min="1">
+            <br><br>
+            
+            <input id="Calcular" onclick="Calcular()" type="button" value="Calcular"><br>
+            <br>
+        </div>
+
+    </section>
+
+    <section id="Cont" >
+        <br><br>
+        <div id="Resultado" style="display: none">
+        </div>
+    
+    </section>
+
+    <section id="BTNInicio" style="display: none">
+        <a id="Inicio" href="App_DRN.html"> Volver al inicio</a>
+        <button id="Descarga" onclick="Descargar()"> Descargar </button>
+        <!-- <button id="Compartir" onclick="Compartir()"> Compartir </button> -->
+
+    </section><br><br>
+</body>
+<script src="AppDRN.js"></script>
+</html>

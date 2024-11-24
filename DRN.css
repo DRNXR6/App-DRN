@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+    text-align: center;
+}
+
+header h1 {
+    padding-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    height: 50px;
+    width: 100%;
+    border-bottom: 5px solid;
+    background-color: darkcyan;
+}
+
+#Principal {
+    /* display: none; */
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+select {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    height: 40px;
+}
+
+#BtnPrecios, #BtnCalculo {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#BtnPrecios:hover, #BtnCalculo:hover {
+    background-color: darkcyan;
+}
+
+option:hover, #OK:hover {
+    background-color: darkcyan;
+}
+
+#Precios h2 {
+    text-align: left;
+    padding-left: 20px;
+    border-bottom: solid 3px darkcyan;
+}
+
+summary {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+table {
+    text-align: center;
+    margin: 20px auto 0 auto;
+    width: 60%;
+    height: 500px;
+    border: 3px darkcyan solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid darkcyan;
+}
+th {
+    color: white;
+    background-color: darkcyan;
+}
+
+td {
+    min-width: 200px;
+}
+
+#Inicio, #Descarga, #Compartir {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid;
+}
+
+#Inicio:hover, #Descarga:hover, #Compartir:hover {
+    background-color: darkcyan;
+}
+
+#hacer {
+    border: 3px solid;
+    border-radius: 30px;
+    background-color: gray;
+    width: 80%;
+    margin: 100px auto;
+}
+
+#hacer h2, #Impresion h2, #TipoColor h2, #Cantidad h2, #Fotocopia h2 {
+    background-color: gray;
+
+}
+
+#botones {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    background-color: gray;
+    margin-bottom: 50px;
+}
+
+#Imprimir, #Fotocopiar {
+    border-radius: 10px;
+    background-color: white;
+    width: 50%;
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Imprimir:hover, #Fotocopiar:hover{
+    background-color: darkcyan;
+}
+
+
+
+
+#TipoColor {
+    border: 3px solid;
+    border-radius: 30px;
+    background-color: gray;
+    width: 80%;
+    margin: 100px auto;
+}
+
+#Impresion {
+    border: 3px solid;
+    border-radius: 30px;
+    background-color: gray;
+    width: 80%;
+    margin: 100px auto;
+    padding: 20px;
+    height: auto;
+}
+
+#Fotocopia {
+    border: 3px solid;
+    border-radius: 30px;
+    background-color: gray;
+    width: 80%;
+    margin: 100px auto;
+    padding: 20px;
+    height: auto;
+}
+
+#Siguiente {
+    border-radius: 10px;
+    background-color: white;
+    width: 50%;
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Siguiente:hover {
+    background-color: darkcyan;
+}
+
+
+
+#botones2 {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    background-color: gray;
+    margin-bottom: 50px;
+}
+
+#Si, #No, #Calcular {
+    border-radius: 10px;
+    background-color: white;
+    width: 50%;
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Si:hover, #No:hover{
+    background-color: darkcyan;
+}
+
+
+
+#Cantidad {
+    border: 3px solid;
+    border-radius: 30px;
+    background-color: gray;
+    width: 80%;
+    margin: 100px auto;
+    padding: 20px;
+    height: auto;
+}
+
+#Cant {
+    padding: 10px;
+    font-size: 25px;
+    height: 20px;
+}
+
+#Calcular:hover {
+    background-color: darkcyan;
+}
+
+#Resultado {
+    z-index: 2;
+    line-height: 45px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 10px 0;
+    border: 5px solid darkcyan;
+    border-style: dashed;
+    border-radius: 20px;
+    width: 80%;
+    color: black;
+    font-size: 30px;
+}
+
+#Label {
+    z-index: 2;
+    border-bottom: 3px solid darkcyan;
+}
+
+#Label, #p1, #p2, #p3, #p4, #MTotal{
+    padding: 10px;
+
+}
