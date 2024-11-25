@@ -14,7 +14,10 @@ function Inicio () {
     document.getElementById('Precios').style.display = 'none';
     document.getElementById('Calculo').style.display = 'none';
     document.getElementById('Resultado').style.display = 'none';
-
+    document.getElementById('Fotocopia').style.display = 'none';
+    document.getElementById('Impresion').style.display = 'none';
+    document.getElementById('TipoColor').style.display = 'none';
+    document.getElementById('Cantidad').style.display = 'none';
 }
 
 function calculo () {
