@@ -15,12 +15,15 @@
     </header>
 
     <section id="Principal">
-        <h2> Esta es una aplicacion para ver los precios <br> de impresión/fotocopias y para realizar <br> calculos especificos. </h2>
+        <h2> Esta es una aplicacion para ver los precios <br> de impresión/fotocopias o para realizar <br> calculos especificos. </h2>
         <br><hr><br>
 
         <h2> Acciones disponibles: </h2>
         <input id="BtnPrecios" onclick="precios()" type="button" value="Ver precios"><br>
         <input id="BtnCalculo" onclick="calculo()" type="button" value="Hacer calculo">
+        <br>
+        <a href="https://wa.me/message/4ZTGWDGQHGION1"> <input id="BtnContactar" type="button" value="Contactar"> </a>
+
     </section>
 
     <section id="Precios" style="display: none;">
@@ -164,6 +167,7 @@
                 <input id="Fotocopiar" onclick="Fotocopiar()" type="button" value="Fotocopiar"><br>
             </div>
 
+            <input id="Inicio" type="button" value="Volver al inicio" onclick="Inicio()"><br><br>
         </div>
 
         <div id="Impresion" style="display: none">
@@ -180,6 +184,7 @@
                 <option value="Curriculum"> Currículum </option>
             </select><br><br><br>
 
+            <input id="Inicio" type="button" value="Volver al inicio" onclick="Inicio()">
             <input id="Siguiente" onclick="Siguiente()" type="button" value="Siguiente"><br>
             <br><br>
         </div>
@@ -197,6 +202,7 @@
                 <option value="9Img"> 9 imagenes por página </option>
             </select><br><br>
 
+            <input id="Inicio" type="button" value="Volver al inicio" onclick="Inicio()">
             <input id="Siguiente" onclick="Siguiente()" type="button" value="Siguiente"><br>
 
         </div>
@@ -209,6 +215,9 @@
                 <input id="Si" onclick="Si()" type="button" value="Si"><br>
                 <input id="No" onclick="No()" type="button" value="No"><br>
             </div>
+
+            <input id="Inicio" type="button" value="Volver al inicio" onclick="Inicio()"><br><br>
+
         </div>
 
         <div id="Cantidad" style="display: none">
@@ -217,17 +226,18 @@
             <input id="Cant" type="number" min="1">
             <br><br>
             
+            <a id="Inicio" href="index.html"> Volver al inicio</a>
             <input id="Calcular" onclick="Calcular()" type="button" value="Calcular"><br>
             <br>
-        </div>
 
+        </div>
     </section>
 
     <section id="Cont" >
         <br><br>
         <div id="Resultado" style="display: none">
         </div>
-        <br><br>
+    
     </section>
 
     <section id="BTNInicio" style="display: none">
