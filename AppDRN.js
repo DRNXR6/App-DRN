@@ -135,7 +135,7 @@ function Calcular () {
                 let Contenedor = document.getElementById('Resultado');
 
                 Label = ("Resumen del calculo");
-                Texto1 = ("Estás realizando: Impresiones");
+                Texto1 = ("Quieres: Impresiones");
                 Texto2 = ("Material: " + Material);
                 Texto3 = ("Estas imprimiendo: A color");
                 Texto4 = ("Cantidad: " + Cantidad);
@@ -244,7 +244,7 @@ function Calcular () {
                 let Contenedor = document.getElementById('Resultado');
 
                 Label = ("Resumen del calculo");
-                Texto1 = ("Estás realizando: Impresiones");
+                Texto1 = ("Quieres: Impresiones");
                 Texto2 = ("Material: " + Material);
                 Texto3 = ("Estas imprimiendo: A blanco y negro");
                 Texto4 = ("Cantidad: " + Cantidad);
@@ -350,7 +350,7 @@ function Calcular () {
                 let Contenedor = document.getElementById('Resultado');
 
                 Label = ("Resumen del calculo");
-                Texto1 = ("Estás realizando: Fotocopias");
+                Texto1 = ("Quieres: Fotocopias");
                 Texto2 = ("Material: " + Material2);
                 Texto3 = ("Estas fotocopiando: A color");
                 Texto4 = ("Cantidad: " + Cantidad);
@@ -452,7 +452,7 @@ function Calcular () {
                 let Contenedor = document.getElementById('Resultado');
 
                 Label = ("Resumen del calculo");
-                Texto1 = ("Estás realizando: Fotocopias");
+                Texto1 = ("Quieres: Fotocopias");
                 Texto2 = ("Material: " + Material2);
                 Texto3 = ("Estas fotocopiando: A blanco y negro");
                 Texto4 = ("Cantidad: " + Cantidad);
